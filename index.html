@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Photon</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link href="styling.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="LOGO-PHOTON (1).png">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    </head>
+    <body>
+        <div class="container-fullwidth">
+         
+           
+		<nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+  <a class="navbar-brand" href="index.html"><span><img id="logo" src="logo (4).png"></span></a>
+            <div class="yellow" style="color: yellow"></div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#band">Domain</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#services">Bunkering</a>
+          <a class="dropdown-item" href="#services">Dry Cargo Barging</a>
+          <a class="dropdown-item" href="#services">Lubricants</a>
+          <a class="dropdown-item" href="#services">Fresh Water Supply</a>
+          <a class="dropdown-item" href="#services">Marine Consultancies</a>
+        </div>
+      </li>
+      <li class="nav-item">
+      	<a class="nav-link" href="#about-nav">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#our-reach">Our Reach</a>
+      </li>
+         <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Company
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">The Team</a>
+          <a class="dropdown-item" href="#">Licenses</a>
+        </div>
+      </li> -->
+        <li class="nav-item">
+        <a class="nav-link" href="#client-text">Contact</a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+<div class="strip">
+  <img src="Strip.png">
+</div>
+            <div>
+               <!--  <video poster="vid%20(1).png" id="bgvid" playsinline autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            </video> -->
+            <div class="parallax"></div>
+            <div id="text">
+                <p>Enlivening, environment friendly and sustainable solutions to support your needs.
+                    <p><a href="#space"><span id="arrow"><img src="arrow.png"></span></a></p>
+            </div>
+
+            </div>
+            <div id="extratext">
+              With an affinity to entrust
+              <div id="normal">We, PHOTON TRADING & MARINE SERVICES LLP believe in establishing a partnership not just limited to business but more in resonance to trust and work ethics. We assure to work beyond the contractual requirements and hope to be a part of your success in the ever growing marine industry. </div>
+            </div>
+            <div class="parallax2"></div>
+            <div id="about-nav" style="padding-top: 35px;"></div>
+            <div id="space"></div>
+            
+            <div id="who">
+                <div id="who-text">
+                    <div id="who-text-head"><span id="">About Photon</span></div>
+                    <div id="italics">
+                        Established in 2020, the framework and principles of Photon have been scripted by virtue of more than a century (and counting) of cumulative seatime experience on a wide array of vessels ranging from oil to chemical and gas tankers including LNGs. The team upfront involves 5 Master Mariners entitled with extensive managerial skills and inculcated by ventures on a variety of oil majors.
+                    </div>
+                    <div id="about-text">
+                        With Photon we strategize efficient logistics at competitive evaluation to cater to all your marine needs. Responsibly and punctually.
+We assure no compromise pertaining to the quality of the fuel with compliance to the safety regulations of ships. 
+Marine fuel and lubricants shall be responsibly delivered in compliance with the specified parameters and ratings as demanded by the purchaser.  We ensure that the product conforms to relevant specifications and statutory limits. Safety and efficiency is a mandate accompanied by a mark of excellence and trust. At Photon we adhere to a vision of mitigating any possible hazard or cautions in the end to end process of bunker supplying.  Our crew collaborates and strategizes to resolve any dispute with effective communication between the fuel supplier and purchaser. Quality control and monitoring is an essential practice at Photon and the final blend until delivery is guaranteed homogeneous and stable. 
+</div>
+                </div>
+                <div id="who-image">
+<!--                    <img src="demo.jpg">-->
+<!--                    azhahah-->
+                </div>
+            </div>
+            <div id="services" style="margin-top: 80px;"></div>
+            <div id="expertise" id="exp">
+                <div id="expertise-head">Services</div>
+                <div>
+                    <main class="grid">
+
+   <article>
+    <img src="d.jpg" alt="Sample photo">
+    <div class="text1">
+      <h3 id="text1hover">Bunkering</h3>
+      <p>Need for marine fuels and lube oils, made easier. Photon remasters the supply chain and logistics to meet up for your requirements, by delivering top quality fuels without jeopardizing the safety of the crew and ship.Providing comprehensive dockside and midstream fuelling services and competitive rates and assured service.</p>
+    </div>
+  </article>                 	
+  <article>
+    <img src="dock.jpg" alt="Sample photo">
+    <div class="text1">
+      <h3 id="text1hover">Dry Cargo Barging</h3>
+      <p>We operate flat top barges to mobilise dry cargo in bulk and package form.</p>
+    </div>
+  </article>
+  
+  <article>
+    <img src="lube.jpg" alt="Sample photo">
+    <div class="text1" id="ab">
+      <h3 id="text1hover">Lubricants</h3>
+      <p>With our strong relationship with the petroleum refineries, we also procure and supply various grades of lubricants for the marine industry. The supplies of lubricants are done in drums or pumped in bulk to vessel as per the customer's specifications.
+
+</p>
+    </div>
+  </article>
+ 
+                    </main>
+                    <main class="grid" id="second-grid">
+                    	 <article id="first-card">
+    <img src="water.jpg" alt="Sample photo">
+    <div class="text1" id="ab">
+      <h3 id="text1hover">Fresh Water Supply</h3>
+      <p>Fresh Water is supplied as per the requirements through barge. Fresh Water is procured from the Mumbai Municipal Corporation and other approved sources. This adheres to the specifications of quality for such supplies.
+
+</p>
+    </div>
+  </article>
+
+   <article>
+    <img src="wheel.jpg" alt="Sample photo">
+    <div class="text1" id="ab">
+      <h3 id="text1hover">Marine Consultancies</h3>
+      <p>Defining a confidence to invest. Derived from our vast experience at sea, Photon amalgamates cutting edge integrated solutions and simplified approaches to fulfil all marine industrial needs for our esteemed clients. Contact us to talk through your needs today.
+
+</p>
+    </div>
+  </article>
+
+
+                    	</main>
+                </div>
+            </div>
+
+            <div id="who">
+                <div id="who-text">
+                    <div id="who-text-head">Operations</div>
+                    <div id="italics">
+                        Ever ready to provide, Photon carries out fueling operations on major ports along the Indian Coast. Supplying marine fuel oils, provisions for the ship's store and fresh water we promise a 100% compliance to the desired standards. Fueled by an envision so enthralling, we intend to operate along the entirety of the Indian Coastline and possibly reach out to international waters as well fulfilling the requirements of our esteemed clients. 
+                    </div>
+                    <div id="about-text">
+</div>
+                </div>
+                <div id="who-image-2">
+<!--                    <img src="demo.jpg">-->
+<!--                    azhahah-->
+                </div>
+            </div>
+
+
+            <div id="expertise" id="exp">
+              <div id="our-reach"></div>
+                <div id="expertise-head">Our Reach</div>
+                    <div id="mapid" style="display: block; margin-left: auto; margin-right: auto; width: 700px; height: 500px; margin-bottom: 80px;"></div>
+
+                    
+
+                
+            </div>
+
+            
+
+            <div id="band-header">PRODUCTS</div>
+            <div id="band">
+
+                <div id="band-text">
+                <div id="inner-text" class="w3-animate-bottom">Fo-380cst(ISO 8217: 2005e: RMG 380)</div>
+                <div id="inner-text" class="w3-animate-bottom">Fo-180cst(ISO 8217: 2005e: RME 180)</div>
+                <div id="inner-text" class="w3-animate-bottom">MDO(ISO 8217: 2005e: DMB)</div>
+                <div id="inner-text" class="no w3-animate-bottom">MGO(ISO 8217: 2005e: DMA)</div>
+                </div>
+            </div>
+            <div id="fade-container">
+                <div id="fc-head">Domain</div>
+                <!-- <div id="fade">
+                <div id="fc">
+                    <img src="5.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+        <div id="overlay-head">Commercial offices</div>
+        <div id="overlay-text">Tailor made fuel supply solutions operating on ports across the Indian coastlines.</div>
+      </div>
+  </div>
+                </div>
+                <div id="fc">
+                  <div id="fc2" class="fc2">
+                    <img src="6.jpg" alt="Avatar" class="image">
+                  </div>
+  <div class="overlay">
+    <div class="text">
+        <div id="overlay-head">Iron work and roofing</div>
+        <div id="overlay-text">Supply of marine fuels and lube oils along with provisions for the ship store and fresh water.</div>
+      </div>
+  </div>
+                </div>
+                <div id="fc" class="fc3">
+                    <img src="7.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+        <div id="overlay-head">Modern living</div>
+        <div id="overlay-text">Prioritizing safety regulations and sustainable development. Engaging in environment friendly end-to-end delivery and sanctioning of marine fuels. Trust ensured on and off the shore.</div>
+      </div>
+  </div>
+                </div>
+                <div id="fc" class="fc4">
+                    <img src="8.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+        <div id="overlay-head">Cement and concrete</div>
+        <div id="overlay-text">Accountability and transparency ensured at inter-organization level and effectively mitigating disputes to maintain integrity enforcing strong morales.</div>
+      </div>
+  </div>
+                </div>
+            </div> -->
+            </div>
+            <div>
+              <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="dry.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Supply of marine fuels and lube oils along with provisions for the ship store and fresh water.</h3>
+        <p></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="rig.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Prioritizing safety regulations and sustainable development. Engaging in environment friendly end-to-end delivery and sanctioning of marine fuels. Trust ensured on and off the shore.</h3>
+        <p></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="hand.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Accountability and transparency ensured at inter-organization level and effectively mitigating disputes to maintain integrity enforcing strong morales.</h3>
+        <p></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="c.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Tailor made fuel supply solutions operating on ports across the Indian coastlines.</h3>
+        <p></p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+            </div>
+            <div id="client-section">
+                <div id="client-head"><span><img src="green.png"></span>An Eco-Friendly Approach</div>
+                <div id="client-text">
+                    Maintaining a pollution free Marine environment has and will always be at the topmost pedestal of our precedence. Sustainable development is the top concern and a multidimensional array of solutions ensures ecologically viable procedures to meet your demands.
+                </div>
+            </div>
+            <div id="contact">
+                <div id="contact-head">Contact</div>
+                <div id="contact-section">
+                <div id="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.5587727278016!2d72.83795841472765!3d18.950914487159803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce2f60ae0b8f%3A0x97c17d4cfc41d404!2sAshirwad%20Building!5e0!3m2!1sen!2sin!4v1594483384871!5m2!1sen!2sin" width="820" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                    </div>
+                <div id="google-forms">
+                    <div id="inquiry">Inquiry</div>
+                    <div id="inquiry-text">For any inquiries, questions or commendations, please fill out and send the following form.</div>
+                    <div id="form"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc9QfPGZMlhmSJ4PLfZZcSkhoO6ZjVN6aBQ0tFL5encwzogTA/viewform?embedded=true" width="300" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+                    </div>
+                <div id="contact-us">
+                    <div id="contact-us-head">Contact Us</div>
+                    <div id="contact-content">
+                        <div>313, 64 E, Sant Tukdoji Maharaj Road, Carnac Bunder, Masjid Bunder (E), Mumbai-400009, India
+</div>
+                        <div><a href = "mailto: photon.tms@gmail.com">photon.tms@gmail.com</a></div>
+                        <div>Mob:&nbsp;9757106881</div>
+                        <div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 9969126643</div>
+                        <div id="quote">Get a Quote : 022-4972 5807</div>
+
+
+                    </div>
+                    </div>
+            </div>
+            <div id="copyright">&copy; 2020 by Photon. All rights reserved.
+              <div id="corner">
+            <div id="corner-image">
+              <img src="background.png">
+            </div>
+            
+          </div>
+            </div>
+            
+            </div>
+            
+          
+        </div>
+      <script>
+
+	var mymap = L.map('mapid').setView([18.562947, 77.915039], 5);
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 10,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+
+
+	var blueIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-blue.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var goldIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-gold.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var redIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-red.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [35, 53],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var greenIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-green.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var orangeIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-orange.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var yellowIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-yellow.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var violetIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-violet.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var greyIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-grey.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var blackIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-black.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+	
+
+
+   L.marker([18.9506, 72.8383],{icon: redIcon}).addTo(mymap)
+		.bindPopup("<b>PHOTON Trading & Marine Services LLP</b><br />Head Office, Mumbai")
+
+ 
+  L.marker([23.0081, 70.1873],{icon: blackIcon}).addTo(mymap)
+  .bindPopup("<b>Kandla</b><br />Gujarat")
+
+  L.marker([22.7497, 69.6952],{icon: blackIcon}).addTo(mymap)
+  .bindPopup("<b>Mundra</b><br />Gujarat")
+
+  L.marker([15.3750, 73.8397],{icon: goldIcon}).addTo(mymap)
+  .bindPopup("<b>Mormugao</b><br />Goa")
+
+  L.marker([12.8500, 74.8354],{icon: goldIcon}).addTo(mymap)
+  .bindPopup("<b>Mangalore</b><br />Karnataka")
+
+  L.marker([9.9546, 76.2678],{icon: orangeIcon}).addTo(mymap)
+  .bindPopup("<b>Cochin</b><br />Kerala")
+
+  L.marker([8.7563, 78.1791],{icon: greenIcon}).addTo(mymap)
+  .bindPopup("<b>Tuticorin</b><br />Tamil Nadu")
+
+  L.marker([13.0815, 80.2921],{icon: blueIcon}).addTo(mymap)
+  .bindPopup("<b>Chennai</b><br />Tamil Nadu")
+
+  L.marker([17.6856, 83.2160],{icon: greyIcon}).addTo(mymap)
+  .bindPopup("<b>Vishakapatnam</b><br />Andhra Pradesh")
+
+  L.marker([16.9399, 82.2492],{icon: violetIcon}).addTo(mymap)
+  .bindPopup("<b>Kakinada</b><br />Andhra Pradesh")
+
+  L.marker([20.316551, 86.611366],{icon: greyIcon}).addTo(mymap)
+  .bindPopup("<b>Paradip</b><br />Orissa")
+
+  L.marker([22.0446, 88.0890],{icon: blackIcon}).addTo(mymap)
+  .bindPopup("<b>Haldia</b><br />West Bengal")
+
+  L.marker([22.5461, 88.3149],{icon: blackIcon}).addTo(mymap)
+  .bindPopup("<b>Kolkata</b><br />West Bengal")
+
+
+
+	var popup = L.popup();
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent("You clicked the map at " + e.latlng.toString())
+			.openOn(mymap);
+	}
+
+	mymap.on('click', onMapClick);
+
+</script>  
+    </body>
+</html>
